@@ -1,0 +1,41 @@
+.header-seacrh__button{
+    display: flex;
+    border: $BTN_BORDER_COLOR 1px solid ;
+    background-color: transparent;
+    border-radius: 24px;
+    width: 320px;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header-seacrh__button:hover,.header-loggin__auth-button:hover{
+    box-shadow: 0 2px 2px 0 rgba(112, 110, 110, 0.5);
+}
+.header-loggin__auth-button{
+    display: flex;
+}
+.header-loggin__world-button{
+    background-color: transparent;
+    border:0;
+}
+.header-loggin__auth-button{
+    display: flex;
+    border: $BTN_BORDER_COLOR 1px solid ;
+    background-color: transparent;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 77px;
+    height: 42px;
+    padding:5px 5px 5px 12px
+}
+
+//header 400px
+@media (max-width:400px){
+    .header-seacrh__button{
+        width: 200px;
+    }
+}

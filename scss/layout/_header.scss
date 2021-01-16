@@ -1,0 +1,87 @@
+.header{
+    background-color:$FORM_BACKGROUND_COLOR;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: $BTN_TITLE_COLOR;
+    font-family:Roboto;
+}
+.header-nav{
+    height: inherit;
+}
+.header-log__image{
+    color:$BTN_SEARCH_BG_COLOR;
+}
+.header-container{margin: 18px 0;
+    height: inherit;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header-search{
+    color: $FORM_TOP_LINKS_COLOR;
+    
+}
+.header-seacrh__button-image{
+    background-color:$BTN_SEARCH_BG_COLOR;
+}
+
+.header-seacrh__button-image svg{
+    color:$FORM_BACKGROUND_COLOR;
+}
+.header-loggin{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-loggin__item{
+    margin-left: 10px;
+}
+.header-seacrh__button-text{
+    padding: 0 16px;
+}
+.header-seacrh__button-image{
+    padding: 10px;
+    border-radius: 24px;
+    margin: 7px 7px 7px 0;
+}
+.header-loggin_homeCreatorButton{
+    background-color: transparent;
+    border-radius: 24px;
+    padding: 12px;
+    text-align: center;
+}
+.header-loggin_homeCreatorButton a{
+    color: $FORM_TOP_LINKS_COLOR;
+    text-decoration: none;
+}
+.header-loggin_homeCreatorButton:hover,.header-loggin__wrorld-container:hover{
+background-color: $HEADER_BTN_HOVER;;
+}
+.header-loggin__wrorld-container{
+    padding: 12px;
+    border-radius: 22px;
+}
+
+@media (max-width:400px){
+    .header-container{
+        padding-left:44px;
+        padding-right: 44px;
+    }
+    .header-loggin{
+    }
+    .header-loggin__item{
+        padding: 4px;
+        margin-left: 4px;
+    }
+}
+.main{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    padding: 200px;
+}
