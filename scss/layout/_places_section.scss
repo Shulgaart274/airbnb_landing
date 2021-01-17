@@ -1,0 +1,138 @@
+.places__section{
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.palces-wrapper{
+    margin: 0 auto;
+    padding:60px 88px
+}
+.towns__section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:15px;
+    margin-bottom: 90px;
+}
+.town_card img{
+    border-radius: 8px;
+    max-width: 64px;
+    height: auto;
+}
+.town_card__container{
+    display: flex;
+}
+.town_card__main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.town_card__link{
+    text-decoration: none;
+    color: $CITY_LINKS_COLOR;
+}
+.town_card__main-text h3{
+    font-weight: 600;
+}
+
+
+.places_house__card img{
+    border-radius: 8px;
+    max-width: 350px;
+    width: auto;
+    height: auto;
+}
+.places_houses_select{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:15px;
+}
+.places_houses h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.places_house_link{
+    text-decoration: none;
+    color:  $CITY_LINKS_COLOR;
+    font-weight: 500;
+    font-size: 18px;
+}
+.places_house_link p{
+    margin-top: 10px;
+}
+
+@media (max-width:1560px){
+    .places_house__card img{
+        max-width: 224px; 
+    }
+}
+
+@media (max-width:1480px){
+    .places_house__card img{
+        max-width: 154px; 
+    }
+    .palces-wrapper{
+        margin: 0 auto;
+        padding:60px 34px;
+    }
+    .places_house_link{
+        font-size: 20px;
+    }
+    .town_card__container{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:880px){
+    .town_card img{
+        max-width: 44px;
+    }
+    .places_house__card img{
+        max-width: 84px; 
+    }
+    .palces-wrapper{
+        margin: 0 auto;
+        padding:60px 12px;
+    }
+    .places_house_link{
+        font-size: 14px;
+    }
+    .town_card__container{
+        font-size: 14px;
+    }
+    .towns__section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width:620px){
+    .town_card img{
+        max-width: 34px;
+    }
+    .towns__section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:320px){
+    .town_card img{
+        max-width: 24px;
+    }
+    .places_house__card img{
+        max-width: 64px; 
+    }
+    .palces-wrapper{
+        margin: 0 auto;
+        padding:60px 12px;
+    }
+    .places_house_link{
+        font-size: 10px;
+    }
+    .town_card__container{
+        font-size: 10px;
+    }
+    .towns__section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
