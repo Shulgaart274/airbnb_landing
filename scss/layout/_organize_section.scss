@@ -1,0 +1,95 @@
+@import "../abstracts/variables";
+
+.organize__section {
+  background-color: #fff;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  padding: 32px 0;
+}
+
+.organize__container {
+  padding: 0 24px;
+  max-width: 1600px;
+}
+
+.organize__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.organize__cards {
+  display: grid;
+  gap: 0 15px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.organize__card {
+  grid-column: span 1;
+}
+
+.organize__card-link {
+  text-decoration: none;
+  color: #222;
+}
+
+.organize__card-img {
+  width: 100%;
+  height: auto;
+  border-width: 0 5px;
+  border-radius: 1%;
+}
+
+.organize__card-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
+@media screen and (min-width: 744px) {
+  .organize__container {
+    padding: 0 40px;
+  }
+
+  .organize__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .organize__section {
+    padding: 40px 0;
+  }
+
+  .organize__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1128px) {
+  .organize__container {
+    margin: 0 auto;
+    padding: 0 80px;
+    max-width: 1760px;
+  }
+
+  .organize__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .organize__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .organize__card-description {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

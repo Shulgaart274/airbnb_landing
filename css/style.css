@@ -462,14 +462,14 @@ textarea {
 }
 
 .adventures__title {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 700;
 }
 
 .adventures__description {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   padding: 8px 0;
 }
 
@@ -483,6 +483,11 @@ textarea {
 
 .adventures__card {
   grid-column: span 1;
+}
+
+.adventures__card-link {
+  text-decoration: none;
+  color: #fff;
 }
 
 .adventures__card-img {
@@ -505,6 +510,36 @@ textarea {
   line-height: 14px;
 }
 
+@media screen and (min-width: 744px) {
+  .adventures__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .adventures__section {
+    padding: 40px 0;
+  }
+
+  .adventures__description {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .adventures__container {
+    padding: 0 40px;
+  }
+
+  .adventures__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .adventures__card-description {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 @media screen and (min-width: 1128px) {
   .adventures__container {
     margin: 0 auto;
@@ -533,31 +568,93 @@ textarea {
     line-height: 18px;
   }
 }
+.organize__section {
+  background-color: #fff;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  padding: 32px 0;
+}
+
+.organize__container {
+  padding: 0 24px;
+  max-width: 1600px;
+}
+
+.organize__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.organize__cards {
+  display: grid;
+  gap: 0 15px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.organize__card {
+  grid-column: span 1;
+}
+
+.organize__card-link {
+  text-decoration: none;
+  color: #222;
+}
+
+.organize__card-img {
+  width: 100%;
+  height: auto;
+  border-width: 0 5px;
+  border-radius: 1%;
+}
+
+.organize__card-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
 @media screen and (min-width: 744px) {
-  .adventures__title {
+  .organize__container {
+    padding: 0 40px;
+  }
+
+  .organize__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .organize__section {
+    padding: 40px 0;
+  }
+
+  .organize__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .organize__container {
+    margin: 0 auto;
+    padding: 0 80px;
+    max-width: 1760px;
+  }
+
+  .organize__title {
     font-size: 32px;
     line-height: 36px;
   }
 
-  .adventures__section {
-    padding: 40px 0;
-  }
-
-  .adventures__description {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .adventures__container {
-    padding: 0 40px;
-  }
-
-  .adventures__card-title {
+  .organize__card-title {
     font-size: 18px;
     line-height: 22px;
   }
 
-  .adventures__card-description {
+  .organize__card-description {
     margin-top: 4px;
     font-size: 14px;
     line-height: 18px;
