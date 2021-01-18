@@ -1,13 +1,10 @@
+@import "../mixins/mixins";
+
 .header-seacrh__button{
-    display: flex;
-    border: $BTN_BORDER_COLOR 1px solid ;
-    background-color: transparent;
+    @include buttonsStyle;
     border-radius: 24px;
     width: 320px;
-    height: 48px;
-    align-items: center;
-    justify-content: space-between;
-    
+    height: 48px;  
 }
 
 .header-seacrh__button:hover,.header-loggin__auth-button:hover{
@@ -22,12 +19,7 @@
     border:0;
 }
 .header-loggin__auth-button{
-    display: flex;
-    border: $BTN_BORDER_COLOR 1px solid ;
-    background-color: transparent;
-    border-radius: 24px;
-    align-items: center;
-    justify-content: space-between;
+    @include buttonsStyle;
     padding: 5px;
     width: 77px;
     height: 42px;

@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../mixins/mixins";
 
 .organize__section {
   background-color: #fff;
@@ -13,8 +14,7 @@
 }
 
 .organize__title {
-  font-size: 22px;
-  line-height: 22px;
+  @include fontLine(22px,22px);
   font-weight: 700;
   padding-bottom: 16px;
 }
@@ -44,52 +44,9 @@
 }
 
 .organize__card-title {
-  font-size: 14px;
-  line-height: 18px;
+  @include fontLine(14px,18px);
   font-weight: 500;
   padding-top: 8px;
 }
 
-@media screen and (min-width: 744px) {
-  .organize__container {
-    padding: 0 40px;
-  }
 
-  .organize__title {
-    font-size: 26px;
-    line-height: 30px;
-  }
-
-  .organize__section {
-    padding: 40px 0;
-  }
-
-  .organize__card-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-}
-
-@media screen and (min-width: 1128px) {
-  .organize__container {
-    margin: 0 auto;
-    padding: 0 80px;
-    max-width: 1760px;
-  }
-
-  .organize__title {
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  .organize__card-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .organize__card-description {
-    margin-top: 4px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
