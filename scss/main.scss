@@ -6,10 +6,11 @@
 @import "layout/adventures_section";
 @import "layout/organize_section";
 @import "layout/header";
-
+@import "layout/title_section";
 html{
     box-sizing: border-box;
 }
 *,*::before,*::after{
     box-sizing: inherit;
 }
+
