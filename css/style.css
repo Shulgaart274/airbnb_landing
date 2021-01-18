@@ -495,6 +495,7 @@ textarea {
   width: 100%;
   color: #222222;
   font-family: Roboto;
+  z-index: 1;
 }
 
 .header-nav {
@@ -569,6 +570,24 @@ textarea {
   border-radius: 22px;
 }
 
+@media (max-width: 880px) {
+  .header-loggin {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: center;
+  }
+
+  .header-logo {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 592px) {
+  .header-logo {
+    display: none;
+  }
+}
 @media (max-width: 400px) {
   .header-container {
     padding-left: 44px;
@@ -580,13 +599,6 @@ textarea {
     margin-left: 4px;
   }
 }
-.main {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  padding: 200px;
-}
-
 html {
   box-sizing: border-box;
 }

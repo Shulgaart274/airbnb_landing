@@ -68,6 +68,24 @@ background-color: $HEADER_BTN_HOVER;;
     border-radius: 22px;
 }
 
+@media (max-width:880px){
+    .header-loggin{
+        display: none;
+    }
+    .header-container{
+        justify-content: center;
+    }
+    .header-logo{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:592px){
+    .header-logo{
+        display: none;
+    }
+}
+
 @media (max-width:400px){
     .header-container{
         padding-left:44px;
@@ -79,10 +97,4 @@ background-color: $HEADER_BTN_HOVER;;
         padding: 4px;
         margin-left: 4px;
     }
-}
-.main{
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    padding: 200px;
 }
