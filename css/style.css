@@ -526,6 +526,12 @@ textarea {
   background-color: #ff385c;
 }
 
+.header-seacrh__button-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
 .header-seacrh__button-image svg {
   color: #ffffff;
 }
@@ -536,8 +542,11 @@ textarea {
   align-items: center;
 }
 
-.header-loggin__item {
-  margin-left: 10px;
+.header-loggin__text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  white-space: nowrap;
 }
 
 .header-seacrh__button-text {
@@ -562,7 +571,8 @@ textarea {
   text-decoration: none;
 }
 
-.header-loggin_homeCreatorButton:hover, .header-loggin__wrorld-container:hover {
+.header-loggin_homeCreatorButton:hover,
+.header-loggin__wrorld-container:hover {
   background-color: #00000008;
 }
 
@@ -606,7 +616,7 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 90vh;
+  height: calc(var(--hc-sm-height, 4) / var(--hc-sm-width, 3) * 100vw);
 }
 
 .title__container {
@@ -660,10 +670,6 @@ textarea {
     margin-bottom: 15px;
   }
 
-  .title__section {
-    max-height: 60vh;
-  }
-
   .title-section__link {
     font-size: 10px;
   }
@@ -683,6 +689,15 @@ textarea {
 @media screen and (min-width: 744px) {
   .title__container {
     padding: 60px 40px;
+  }
+
+  .title__section {
+    height: calc(var(--hc-md-height, 1) / var(--hc-md-width, 1) * 100vw);
+  }
+}
+@media screen and (min-width: 950px) {
+  .title__section {
+    height: max(550px, min(85vh, calc(var(--hc-lg-height, 9) / var(--hc-lg-width, 16) * 100vw)));
   }
 }
 @media screen and (min-width: 1128px) {
