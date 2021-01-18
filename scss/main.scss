@@ -7,11 +7,5 @@
 @import "layout/title_section";
 @import "layout/places_section";
 @import "layout/footer";
-html{
-    box-sizing: border-box;
-}
-*,*::before,*::after{
-    box-sizing: inherit;
-}
-
-
+@import "layout/adventures_section";
+@import "layout/organize_section";
