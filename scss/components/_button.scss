@@ -11,6 +11,7 @@
 }
 
 .header-seacrh__button:hover,.header-loggin__auth-button:hover{
+    transition: 0.5s all ;
     box-shadow: 0 2px 2px 0 rgba(112, 110, 110, 0.5);
 }
 .header-loggin__auth-button{
