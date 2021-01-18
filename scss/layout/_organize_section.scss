@@ -1,0 +1,60 @@
+@import "../abstracts/variables";
+
+@media screen and (min-width: 1128px) {
+  .adventures__container {
+    margin: 0 auto;
+    padding: 0 80px;
+    max-width: 1760px;
+  }
+
+  .adventures__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .adventures__description {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .adventures__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .adventures__card-description {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .adventures__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .adventures__section {
+    padding: 40px 0;
+  }
+
+  .adventures__description {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .adventures__container {
+    padding: 0 40px;
+  }
+
+  .adventures__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .adventures__card-description {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
