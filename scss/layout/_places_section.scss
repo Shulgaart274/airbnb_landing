@@ -1,150 +1,185 @@
-.places__section{
-    box-sizing: border-box;
-    font-family: Roboto;
+.places__section {
+  box-sizing: border-box;
+  font-family: Roboto;
 }
-.palces-wrapper{
+.palces-wrapper {
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+.towns__section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 90px;
+}
+.town_card img {
+  border-radius: 8px;
+  max-width: 64px;
+  height: auto;
+}
+.town_card__container {
+  display: flex;
+}
+.town_card__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.town_card__main-text h3 {
+  padding-bottom: 4px;
+}
+.town_card__link {
+  text-decoration: none;
+  color: $CITY_LINKS_COLOR;
+}
+.town_card__main-text h3 {
+  font-weight: 600;
+}
+
+.places_houses {
+  position: relative;
+}
+
+.places_houses_select {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.places_houses h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.places_house_link {
+  text-decoration: none;
+  color: $CITY_LINKS_COLOR;
+  font-weight: 500;
+  font-size: 18px;
+}
+.places_house_link p {
+  margin-top: 10px;
+}
+.places_house_img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.places_house__card:last-child {
+  display: none;
+}
+
+.places_house__card {
+  grid-column: span 1;
+}
+
+.places_house__card-btn {
+  position: absolute;
+  top: 50%;
+  right: -2%;
+  border-radius: 50%;
+  border: none;
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1480px) {
+  .palces-wrapper {
     margin: 0 auto;
-    padding:60px 24px;
-}
-.towns__section{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:15px;
-    margin-bottom: 90px;
-}
-.town_card img{
-    border-radius: 8px;
-    max-width: 64px;
-    height: auto;
-}
-.town_card__container{
-    display: flex;
-}
-.town_card__main-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-}
-.town_card__link{
-    text-decoration: none;
-    color: $CITY_LINKS_COLOR;
-}
-.town_card__main-text h3{
-    font-weight: 600;
+    padding: 60px 34px;
+  }
+  .places_house_link {
+    font-size: 20px;
+  }
+  .town_card__container {
+    font-size: 14px;
+  }
 }
 
-.places_houses_select{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:15px;
-}
-.places_houses h2{
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.places_house_link{
-    text-decoration: none;
-    color:  $CITY_LINKS_COLOR;
-    font-weight: 500;
-    font-size: 18px;
-}
-.places_house_link p{
-    margin-top: 10px;
-}
-.places_house_img{
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-.places_house__card{
-    grid-column: span 1;
+@media (max-width: 880px) {
+  .town_card img {
+    max-width: 44px;
+  }
+
+  .palces-wrapper {
+    margin: 0 auto;
+    padding: 60px 12px;
+  }
+  .places_house_link {
+    font-size: 14px;
+  }
+  .town_card__container {
+    font-size: 14px;
+  }
+  .towns__section {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media (max-width:1480px){
-    .palces-wrapper{
-        margin: 0 auto;
-        padding:60px 34px;
-    }
-    .places_house_link{
-        font-size: 20px;
-    }
-    .town_card__container{
-        font-size: 14px;
-    }
+@media (max-width: 620px) {
+  .town_card img {
+    max-width: 34px;
+  }
+  .towns__section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width:880px){
-    .town_card img{
-        max-width: 44px;
-    }
-
-    .palces-wrapper{
-        margin: 0 auto;
-        padding:60px 12px;
-    }
-    .places_house_link{
-        font-size: 14px;
-    }
-    .town_card__container{
-        font-size: 14px;
-    }
-    .towns__section{
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media (max-width: 350px) {
+  //   .town_card img {
+  //     max-width: 24px;
+  //   }
+  //   .places_house__card img {
+  //     max-width: 64px;
+  //   }
+  .places_house_link {
+    font-size: 10px;
+  }
+  .town_card__container {
+    font-size: 10px;
+  }
+  .towns__section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .places_house__card-btn {
+    width: 24px;
+    height: 24px;
+  }
 }
 
-
-@media (max-width:620px){
-    .town_card img{
-        max-width: 34px;
-    }
-    .towns__section{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width:350px){
-    .town_card img{
-        max-width: 24px;
-    }
-    .places_house__card img{
-        max-width: 64px; 
-    }
-    .places_house_link{
-        font-size: 10px;
-    }
-    .town_card__container{
-        font-size: 10px;
-    }
-    .towns__section{
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (max-width: 321px) {
+  .places_house__card-btn {
+    top: 57%;
+  }
 }
 
 @media screen and (min-width: 744px) {
-    .palces-wrapper {
-      padding: 60px 40px;
-    }
-    .places_houses_select {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .places_house__card:last-child {
-      display: none;
-    }
+  .palces-wrapper {
+    padding: 60px 40px;
   }
-  @media screen and (min-width: 1128px) {
-    .palces-wrapper {
-      margin: 0 auto;
-      padding: 60px 80px;
-      max-width: 1760px;
-    }
-    .places_houses_select {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .places_house__card:last-child {
-      display: block;
-    }
+  .places_houses_select {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
+  .places_house__card:last-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .palces-wrapper {
+    margin: 0 auto;
+    padding: 60px 80px;
+    max-width: 1760px;
+  }
+  .places_houses_select {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .places_house__card:last-child {
+    display: block;
+  }
+
+  .places_house__card-btn {
+    display: none;
+  }
+}
