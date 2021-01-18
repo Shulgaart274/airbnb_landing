@@ -866,7 +866,7 @@ textarea {
 }
 @media screen and (max-width: 321px) {
   .places_house__card-btn {
-    top: 57%;
+    top: 51%;
   }
 }
 @media screen and (min-width: 744px) {
