@@ -127,13 +127,24 @@
     .palces-wrapper {
       padding: 60px 40px;
     }
+    .places_houses_select {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .places_house__card:last-child {
+      display: none;
+    }
   }
-  
   @media screen and (min-width: 1128px) {
     .palces-wrapper {
       margin: 0 auto;
       padding: 60px 80px;
       max-width: 1760px;
+    }
+    .places_houses_select {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .places_house__card:last-child {
+      display: block;
     }
   }
   
