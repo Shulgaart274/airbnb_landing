@@ -3,6 +3,13 @@
 @import "components/button";
 @import "components/dropdown";
 @import "components/form";
-
 @import "layout/adventures_section";
 @import "layout/organize_section";
+@import "layout/header";
+
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
