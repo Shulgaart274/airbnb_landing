@@ -136,6 +136,19 @@
     .footer-contact-license{
         text-align: start;
     }
+    .main-footer__container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media (max-width:573px){
+    .footer-contact-license,.footer-pact__links-item{
+        font-size: 14px;
+    }
+    .main-footer__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 
 @media (max-width:389px){

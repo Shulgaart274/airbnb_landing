@@ -601,36 +601,24 @@ textarea {
   }
 }
 .title__section {
-  position: relative;
-  color: #ffffff;
-  width: 100%;
   font-family: Roboto;
-  /*background: url('https://a0.muscache.com/im/pictures/cf39f4c4-e860-43d4-85be-deddd7b2da90.jpg?im_w=1440') no-repeat;
-  */
+  background-image: url("https://a0.muscache.com/im/pictures/cf39f4c4-e860-43d4-85be-deddd7b2da90.jpg?im_w=1920");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  max-height: 90vh;
 }
 
-.title-section__container-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.title__container {
+  padding: 0 24px;
   margin: 0 auto;
 }
 
-.title-section__container-image img {
-  width: 100%;
-}
-
 .title-section__main-content {
-  position: absolute;
-  bottom: 240px;
+  padding: 430px 88px;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding-right: 88px;
-  padding-left: 88px;
 }
 
 .title-section__header {
@@ -662,39 +650,27 @@ textarea {
   background-color: #ebebeb;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 532px) {
   .title-section__main-content {
-    bottom: 100px;
-  }
-}
-@media (max-width: 632px) {
-  .title-section__main-content {
-    bottom: 80px;
+    padding: 200px 48px 430px 48px;
   }
 
   .title-section__header {
-    font-size: 20px;
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .title__section {
+    max-height: 60vh;
   }
 
   .title-section__link {
     font-size: 10px;
   }
 }
-@media (max-width: 532px) {
-  .title-section__main-content {
-    padding-right: 44px;
-    padding-left: 44px;
-    bottom: 40px;
-  }
-
-  .title-section__header {
-    font-size: 15px;
-    margin-bottom: 15px;
-  }
-}
 @media (max-width: 376px) {
   .title-section__header {
-    font-size: 10px;
+    font-size: 30px;
     margin-bottom: 15px;
   }
 
@@ -704,6 +680,18 @@ textarea {
     bottom: 20px;
   }
 }
+@media screen and (min-width: 744px) {
+  .title__container {
+    padding: 60px 40px;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .title__container {
+    margin: 0 auto;
+    padding: 60px 80px;
+    max-width: 1760px;
+  }
+}
 .places__section {
   box-sizing: border-box;
   font-family: Roboto;
@@ -711,7 +699,7 @@ textarea {
 
 .palces-wrapper {
   margin: 0 auto;
-  padding: 60px 88px;
+  padding: 60px 24px;
 }
 
 .towns__section {
@@ -747,13 +735,6 @@ textarea {
   font-weight: 600;
 }
 
-.places_house__card img {
-  border-radius: 8px;
-  max-width: 350px;
-  width: auto;
-  height: auto;
-}
-
 .places_houses_select {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -777,16 +758,17 @@ textarea {
   margin-top: 10px;
 }
 
-@media (max-width: 1560px) {
-  .places_house__card img {
-    max-width: 224px;
-  }
+.places_house_img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-@media (max-width: 1480px) {
-  .places_house__card img {
-    max-width: 154px;
-  }
 
+.places_house__card {
+  grid-column: span 1;
+}
+
+@media (max-width: 1480px) {
   .palces-wrapper {
     margin: 0 auto;
     padding: 60px 34px;
@@ -803,10 +785,6 @@ textarea {
 @media (max-width: 880px) {
   .town_card img {
     max-width: 44px;
-  }
-
-  .places_house__card img {
-    max-width: 84px;
   }
 
   .palces-wrapper {
@@ -835,18 +813,13 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .town_card img {
     max-width: 24px;
   }
 
   .places_house__card img {
     max-width: 64px;
-  }
-
-  .palces-wrapper {
-    margin: 0 auto;
-    padding: 60px 12px;
   }
 
   .places_house_link {
@@ -859,6 +832,18 @@ textarea {
 
   .towns__section {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 744px) {
+  .palces-wrapper {
+    padding: 60px 40px;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .palces-wrapper {
+    margin: 0 auto;
+    padding: 60px 80px;
+    max-width: 1760px;
   }
 }
 .footer {
@@ -1021,6 +1006,21 @@ textarea {
 
   .footer-contact-license {
     text-align: start;
+  }
+
+  .main-footer__container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 573px) {
+  .footer-contact-license, .footer-pact__links-item {
+    font-size: 14px;
+  }
+
+  .main-footer__container {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media (max-width: 389px) {
