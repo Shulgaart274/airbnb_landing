@@ -541,8 +541,76 @@ textarea {
 }
 
 .footer-social_cost {
-  margin-right: 30px;
-  margin-left: 15px;
+  margin-right: 35px;
+  margin-left: 20px;
+}
+
+.footer-language {
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.footer-cost {
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #484848;
+  text-decoration: underline;
+}
+
+@media (max-width: 1028px) {
+  .footer-container__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4);
+    gap: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .footem-contact__sections {
+    flex-direction: column-reverse;
+  }
+
+  .footer-contact__pact {
+    justify-content: center;
+  }
+
+  .footer-contact__media-links {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact-license {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-pact__links_list {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 819px) {
+  .footer-contact__media-links {
+    justify-content: start;
+  }
+
+  .footer-contact__pact {
+    flex-direction: column;
+  }
+
+  .footer-pact__links_list {
+    flex-direction: column;
+  }
+
+  .footer-contact-license {
+    text-align: start;
+  }
+}
+@media (max-width: 389px) {
+  .footer-social-media {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
