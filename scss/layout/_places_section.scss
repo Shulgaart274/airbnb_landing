@@ -48,9 +48,20 @@
 
 .places_houses_select {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-gap: 0 15px;
+  grid-template-columns: repeat(4, calc(80% - 20px * 2));
+  grid-template-rows: minmax(150px, 1fr);
+
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(0.75 * 20px);
+  margin: 8px 0;
 }
+
+.places_houses_select::-webkit-scrollbar {
+  display: none;
+}
+
 .places_houses h2 {
   font-size: 22px;
   line-height: 22px;
@@ -72,12 +83,13 @@
   border-radius: 8px;
 }
 
-.places_house__card:last-child {
-  display: none;
-}
+// .places_house__card:last-child {
+//   display: none;
+// }
 
 .places_house__card {
   grid-column: span 1;
+  scroll-snap-align: center;
 }
 
 .places_house__card-btn {

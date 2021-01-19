@@ -2,8 +2,8 @@
 @import "../mixins/mixins";
 
 .organize__section {
-  background-color:$OFFERS-TRAVEL-LINKS-COLOR;
-  color:$CITY-LINKS-COLOR;
+  background-color: $OFFERS-TRAVEL-LINKS-COLOR;
+  color: $CITY-LINKS-COLOR;
   font-family: "Roboto", sans-serif;
   padding: 32px 0;
 }
@@ -21,19 +21,29 @@
 
 .organize__cards {
   display: grid;
-  gap: 0 15px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 15px;
+  grid-template-columns: repeat(3, calc(85% - 20px * 2));
+  grid-template-rows: minmax(150px, 1fr);
+
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  scrollbar-width: 0;
+  padding-bottom: calc(0.75 * 20px);
   margin: 8px 0;
-  overflow: hidden;
+}
+
+.organize__cards::-webkit-scrollbar {
+  display: none;
 }
 
 .organize__card {
   grid-column: span 1;
+  scroll-snap-align: center;
 }
 
 .organize__card-link {
   text-decoration: none;
-  color:$CITY-LINKS-COLOR;
+  color: $CITY-LINKS-COLOR;
 }
 
 .organize__card-img {
