@@ -10,6 +10,7 @@
   @include container-width-sm;
 }
 .footer-container__cards {
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 48px;
