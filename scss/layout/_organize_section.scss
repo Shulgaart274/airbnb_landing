@@ -14,7 +14,7 @@
 }
 
 .organize__title {
-  @include fontLine(22px,22px);
+  @include font-line(22px, 22px);
   font-weight: 700;
   padding-bottom: 16px;
 }
@@ -44,9 +44,7 @@
 }
 
 .organize__card-title {
-  @include fontLine(14px,18px);
+  @include font-line(14px, 18px);
   font-weight: 500;
   padding-top: 8px;
 }
-
-

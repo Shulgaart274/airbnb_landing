@@ -18,7 +18,7 @@
 }
 
 .adventures__title {
-  @include fontLine(22px,22px);
+  @include font-line(22px, 22px);
   font-weight: 700;
 }
 
@@ -53,14 +53,12 @@
 }
 
 .adventures__card-title {
-  @include fontLine(14px,18px);
+  @include font-line(14px, 18px);
   font-weight: 500;
   padding-top: 8px;
 }
 
 .adventures__card-description {
   margin-top: 4px;
-  @include fontLine(10px,14px);
+  @include font-line(10px, 14px);
 }
-
-

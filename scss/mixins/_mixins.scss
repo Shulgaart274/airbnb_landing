@@ -1,12 +1,12 @@
-@mixin buttonsStyle {
-    display: flex;
-    border: $BTN_BORDER_COLOR 1px solid ;
-    background-color: transparent;
-    border-radius: 24px;
-    align-items: center;
-    justify-content: space-between;
+@mixin buttons-style {
+  display: flex;
+  border: $BTN_BORDER_COLOR 1px solid;
+  background-color: transparent;
+  border-radius: 24px;
+  align-items: center;
+  justify-content: space-between;
 }
-@mixin fontLine($prop1,$prop2) {
-    font-size: $prop1;
-    line-height: $prop2;
+@mixin font-line($prop1, $prop2) {
+  font-size: $prop1;
+  line-height: $prop2;
 }
