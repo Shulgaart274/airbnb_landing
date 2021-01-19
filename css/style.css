@@ -583,6 +583,10 @@ textarea {
   border-radius: 22px;
 }
 
+.main {
+  overflow-x: hidden;
+}
+
 .title__section {
   font-family: Roboto;
   background-image: url("../img/house.png");
@@ -739,8 +743,7 @@ textarea {
 }
 
 .main-footer__container {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 24px;
 }
 
 .footer-container__cards {
@@ -1308,6 +1311,16 @@ textarea {
 @media (max-width: 389px) {
   .footer-social-media {
     display: none;
+  }
+}
+@media screen and (min-width: 744px) {
+  .main-footer__container {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .main-footer__container {
+    padding: 0 80px;
   }
 }
 

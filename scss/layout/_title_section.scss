@@ -1,3 +1,7 @@
+.main {
+  overflow-x: hidden;
+}
+
 .title__section {
   font-family: Roboto;
   background-image: url("../img/house.png");
@@ -44,5 +48,3 @@
 .title-section__link:hover {
   background-color: $BRN_TITLE_HOVER_COLOR;
 }
-
-
