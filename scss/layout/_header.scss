@@ -1,10 +1,10 @@
 .header {
-  background-color: $FORM_BACKGROUND_COLOR;
+  background-color: $FORM-BACKGROUND-COLOR;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  color: $BTN_TITLE_COLOR;
+  color: $BTN-TITLE-COLOR;
   font-family: Roboto;
   z-index: 1;
 }
@@ -12,7 +12,7 @@
   height: inherit;
 }
 .header-log__image {
-  color: $BTN_SEARCH_BG_COLOR;
+  color: $BTN-SEARCH-BG-COLOR;
 }
 .header-container {
   margin: 18px 0;
@@ -25,10 +25,10 @@
   flex-wrap: wrap;
 }
 .header-search {
-  color: $FORM_TOP_LINKS_COLOR;
+  color: $FORM-TOP-LINKS-COLOR;
 }
 .header-seacrh__button-image {
-  background-color: $BTN_SEARCH_BG_COLOR;
+  background-color: $BTN-SEARCH-BG-COLOR;
 }
 
 .header-seacrh__button-text {
@@ -50,7 +50,7 @@
 }
 
 .header-seacrh__button-image svg {
-  color: $FORM_BACKGROUND_COLOR;
+  color: $FORM-BACKGROUND-COLOR;
 }
 .header-loggin {
   display: flex;
@@ -80,43 +80,14 @@
   text-align: center;
 }
 .header-loggin_homeCreatorButton a {
-  color: $FORM_TOP_LINKS_COLOR;
+  color: $FORM-TOP-LINKS-COLOR;
   text-decoration: none;
 }
 .header-loggin_homeCreatorButton:hover,
 .header-loggin__wrorld-container:hover {
-  background-color: $HEADER_BTN_HOVER;
+  background-color:$HEADER-BTN-HOVER;
 }
 .header-loggin__wrorld-container {
   padding: 12px;
   border-radius: 22px;
-}
-
-@media (max-width: 880px) {
-  .header-loggin {
-    display: none;
-  }
-  .header-container {
-    justify-content: center;
-  }
-  .header-logo {
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 592px) {
-  .header-logo {
-    display: none;
-  }
-}
-
-@media (max-width: 400px) {
-  .header-container {
-    padding-left: 44px;
-    padding-right: 44px;
-  }
-  .header-loggin__item {
-    padding: 4px;
-    margin-left: 4px;
-  }
 }

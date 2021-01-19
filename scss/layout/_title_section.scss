@@ -1,3 +1,7 @@
+.main {
+  overflow-x: hidden;
+}
+
 .title__section {
   font-family: Roboto;
   background-image: url("../img/house.png");
@@ -11,7 +15,7 @@
   height: 100%;
   padding: 0 24px;
   margin: 0 auto;
-  color: $FORM_BACKGROUND_COLOR;
+  color: $FORM-BACKGROUND-COLOR;
   display: flex;
   flex-direction: column;
   align-items: var(--ac-md-align-items, flex-start);
@@ -27,8 +31,8 @@
 }
 .title-section__link {
   width: auto;
-  color: $BTN_TITLE_COLOR;
-  background-color: $BTN_BACKGROUND_COLOR;
+  color: $BTN-TITLE-COLOR;
+  background-color: $BTN-BACKGROUND-COLOR;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -42,56 +46,5 @@
   padding-right: 15px;
 }
 .title-section__link:hover {
-  background-color: $BRN_TITLE_HOVER_COLOR;
+  background-color: $BTN-TITLE-HOVER-COLOR;
 }
-
-@media (max-width: 532px) {
-  .title-section__header {
-    font-size: 36px;
-    margin-bottom: 15px;
-  }
-  //   .title__section {
-  //     max-height: 60vh;
-  //   }
-  .title-section__link {
-    font-size: 10px;
-  }
-}
-@media (max-width: 376px) {
-  .title-section__header {
-    font-size: 30px;
-    margin-bottom: 15px;
-  }
-  .title-section__main-content {
-    padding-right: 22px;
-    padding-left: 22px;
-    bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 744px) {
-  .title__container {
-    padding: 0 40px;
-  }
-  .title__section {
-    height: calc(var(--hc-md-height, 1) / var(--hc-md-width, 1) * 100vw);
-  }
-}
-
-@media screen and (min-width: 950px) {
-  .title__section {
-    height: max(
-      550px,
-      min(85vh, calc(var(--hc-lg-height, 9) / var(--hc-lg-width, 16) * 100vw))
-    );
-  }
-}
-
-@media screen and (min-width: 1128px) {
-  .title__container {
-    margin: 0 auto;
-    padding: 0 80px;
-    max-width: 1760px;
-  }
-}
-

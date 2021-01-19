@@ -450,13 +450,15 @@ textarea {
   border: rgba(175, 164, 164, 0.596) 1px solid;
   background-color: transparent;
   border-radius: 24px;
-  width: 320px;
-  height: 48px;
   align-items: center;
   justify-content: space-between;
+  border-radius: 24px;
+  width: 320px;
+  height: 48px;
 }
 
-.header-seacrh__button:hover, .header-loggin__auth-button:hover {
+.header-seacrh__button:hover,
+.header-loggin__auth-button:hover {
   transition: 0.5s all;
   box-shadow: 0 2px 2px 0 rgba(112, 110, 110, 0.5);
 }
@@ -594,35 +596,10 @@ textarea {
   border-radius: 22px;
 }
 
-@media (max-width: 880px) {
-  .header-loggin {
-    display: none;
-  }
-
-  .header-container {
-    justify-content: center;
-  }
-
-  .header-logo {
-    margin-right: 10px;
-  }
+.main {
+  overflow-x: hidden;
 }
-@media (max-width: 592px) {
-  .header-logo {
-    display: none;
-  }
-}
-@media (max-width: 400px) {
-  .header-container {
-    padding-left: 44px;
-    padding-right: 44px;
-  }
 
-  .header-loggin__item {
-    padding: 4px;
-    margin-left: 4px;
-  }
-}
 .title__section {
   font-family: Roboto;
   background-image: url("../img/house.png");
@@ -673,49 +650,6 @@ textarea {
   background-color: #ebebeb;
 }
 
-@media (max-width: 532px) {
-  .title-section__header {
-    font-size: 36px;
-    margin-bottom: 15px;
-  }
-
-  .title-section__link {
-    font-size: 10px;
-  }
-}
-@media (max-width: 376px) {
-  .title-section__header {
-    font-size: 30px;
-    margin-bottom: 15px;
-  }
-
-  .title-section__main-content {
-    padding-right: 22px;
-    padding-left: 22px;
-    bottom: 20px;
-  }
-}
-@media screen and (min-width: 744px) {
-  .title__container {
-    padding: 0 40px;
-  }
-
-  .title__section {
-    height: calc(var(--hc-md-height, 1) / var(--hc-md-width, 1) * 100vw);
-  }
-}
-@media screen and (min-width: 950px) {
-  .title__section {
-    height: max(550px, min(85vh, calc(var(--hc-lg-height, 9) / var(--hc-lg-width, 16) * 100vw)));
-  }
-}
-@media screen and (min-width: 1128px) {
-  .title__container {
-    margin: 0 auto;
-    padding: 0 80px;
-    max-width: 1760px;
-  }
-}
 .places__section {
   box-sizing: border-box;
   font-family: Roboto;
@@ -814,106 +748,6 @@ textarea {
   height: 32px;
 }
 
-@media (max-width: 1480px) {
-  .palces-wrapper {
-    margin: 0 auto;
-    padding: 60px 34px;
-  }
-
-  .places_house_link {
-    font-size: 20px;
-  }
-
-  .town_card__container {
-    font-size: 14px;
-  }
-}
-@media (max-width: 880px) {
-  .town_card img {
-    max-width: 44px;
-  }
-
-  .palces-wrapper {
-    margin: 0 auto;
-    padding: 60px 12px;
-  }
-
-  .places_house_link {
-    font-size: 14px;
-  }
-
-  .town_card__container {
-    font-size: 14px;
-  }
-
-  .towns__section {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 620px) {
-  .town_card img {
-    max-width: 34px;
-  }
-
-  .towns__section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 350px) {
-  .places_house_link {
-    font-size: 10px;
-  }
-
-  .town_card__container {
-    font-size: 10px;
-  }
-
-  .towns__section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .places_house__card-btn {
-    width: 24px;
-    height: 24px;
-  }
-}
-@media screen and (max-width: 321px) {
-  .places_house__card-btn {
-    top: 51%;
-  }
-}
-@media screen and (min-width: 744px) {
-  .palces-wrapper {
-    padding: 60px 40px;
-  }
-
-  .places_houses_select {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .places_house__card:last-child {
-    display: none;
-  }
-}
-@media screen and (min-width: 1128px) {
-  .palces-wrapper {
-    margin: 0 auto;
-    padding: 60px 80px;
-    max-width: 1760px;
-  }
-
-  .places_houses_select {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .places_house__card:last-child {
-    display: block;
-  }
-
-  .places_house__card-btn {
-    display: none;
-  }
-}
 .footer {
   box-sizing: border-box;
   font-family: Roboto;
@@ -922,8 +756,7 @@ textarea {
 }
 
 .main-footer__container {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 24px;
 }
 
 .footer-container__cards {
@@ -1028,6 +861,402 @@ textarea {
   text-decoration: underline;
 }
 
+.adventures__section {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  padding: 32px 0;
+}
+
+.adventures__container {
+  padding: 0 24px;
+}
+
+.adventures__title-wrap {
+  padding-bottom: 8px;
+}
+
+.adventures__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.adventures__description {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 0;
+}
+
+.adventures__cards {
+  display: grid;
+  gap: 0 15px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.adventures__card {
+  grid-column: span 1;
+}
+
+.adventures__card-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.adventures__card-img {
+  width: 100%;
+  height: auto;
+  border-width: 0 5px;
+  border-radius: 1%;
+}
+
+.adventures__card-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
+.adventures__card-description {
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.organize__section {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  padding: 32px 0;
+}
+
+.organize__container {
+  padding: 0 24px;
+  max-width: 1600px;
+}
+
+.organize__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.organize__cards {
+  display: grid;
+  gap: 0 15px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.organize__card {
+  grid-column: span 1;
+}
+
+.organize__card-link {
+  text-decoration: none;
+  color: #222222;
+}
+
+.organize__card-img {
+  width: 100%;
+  height: auto;
+  border-width: 0 5px;
+  border-radius: 1%;
+}
+
+.organize__card-title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  padding-top: 8px;
+}
+
+/*HEADER*/
+@media (max-width: 880px) {
+  .header-loggin {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: center;
+  }
+
+  .header-logo {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 592px) {
+  .header-logo {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .header-container {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .header-loggin__item {
+    padding: 4px;
+    margin-left: 4px;
+  }
+}
+/*TITLE*/
+@media (max-width: 532px) {
+  .title-section__header {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .title-section__link {
+    font-size: 10px;
+  }
+}
+@media (max-width: 376px) {
+  .title-section__header {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .title-section__main-content {
+    padding-right: 22px;
+    padding-left: 22px;
+    bottom: 20px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .title__container {
+    padding: 0 40px;
+  }
+
+  .title__section {
+    height: calc(var(--hc-md-height, 1) / var(--hc-md-width, 1) * 100vw);
+  }
+}
+@media screen and (min-width: 950px) {
+  .title__section {
+    height: max(550px, min(85vh, calc(var(--hc-lg-height, 9) / var(--hc-lg-width, 16) * 100vw)));
+  }
+}
+@media screen and (min-width: 1128px) {
+  .title__container {
+    margin: 0 auto;
+    padding: 0 80px;
+    max-width: 1760px;
+  }
+}
+/*PLACES*/
+@media (max-width: 1480px) {
+  .palces-wrapper {
+    margin: 0 auto;
+    padding: 60px 34px;
+  }
+
+  .places_house_link {
+    font-size: 20px;
+  }
+
+  .town_card__container {
+    font-size: 14px;
+  }
+}
+@media (max-width: 880px) {
+  .town_card img {
+    max-width: 44px;
+  }
+
+  .palces-wrapper {
+    margin: 0 auto;
+    padding: 60px 12px;
+  }
+
+  .places_house_link {
+    font-size: 14px;
+  }
+
+  .town_card__container {
+    font-size: 14px;
+  }
+
+  .towns__section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .town_card img {
+    max-width: 34px;
+  }
+
+  .towns__section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 350px) {
+  .places_house_link {
+    font-size: 10px;
+  }
+
+  .town_card__container {
+    font-size: 10px;
+  }
+
+  .towns__section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .places_house__card-btn {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .places_house__card-btn {
+    top: 51%;
+  }
+}
+@media screen and (min-width: 744px) {
+  .palces-wrapper {
+    padding: 0 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .places_houses_select {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .places_house__card:last-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .palces-wrapper {
+    padding: 0 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    max-width: 1760px;
+  }
+
+  .places_houses_select {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .places_house__card:last-child {
+    display: block;
+  }
+
+  .places_house__card-btn {
+    display: none;
+  }
+}
+/*ADVENTURE*/
+@media screen and (min-width: 744px) {
+  .adventures__container {
+    padding: 0 40px;
+  }
+
+  .adventures__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .adventures__section {
+    padding: 40px 0;
+  }
+
+  .adventures__description {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .adventures__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .adventures__card-description {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .adventures__container {
+    padding: 0 80px;
+    margin: 0 auto;
+    max-width: 1760px;
+  }
+
+  .adventures__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .adventures__description {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .adventures__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .adventures__card-description {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+/*ORGANIZE*/
+@media screen and (min-width: 744px) {
+  .organize__container {
+    padding: 0 40px;
+  }
+
+  .organize__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .organize__section {
+    padding: 40px 0;
+  }
+
+  .organize__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .organize__container {
+    margin: 0 auto;
+    padding: 0 80px;
+    max-width: 1760px;
+  }
+
+  .organize__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .organize__card-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .organize__card-description {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+/*FOOTER*/
 @media (max-width: 1028px) {
   .footer-container__cards {
     display: grid;
@@ -1082,7 +1311,8 @@ textarea {
   }
 }
 @media (max-width: 573px) {
-  .footer-contact-license, .footer-pact__links-item {
+  .footer-contact-license,
+.footer-pact__links-item {
     font-size: 14px;
   }
 
@@ -1096,219 +1326,14 @@ textarea {
     display: none;
   }
 }
-.adventures__section {
-  background-color: #000000;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  padding: 32px 0;
-}
-
-.adventures__container {
-  padding: 0 24px;
-  max-width: 1600px;
-}
-
-.adventures__title-wrap {
-  padding-bottom: 8px;
-}
-
-.adventures__title {
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: 700;
-}
-
-.adventures__description {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 8px 0;
-}
-
-.adventures__cards {
-  display: grid;
-  gap: 0 15px;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 8px 0;
-  overflow: hidden;
-}
-
-.adventures__card {
-  grid-column: span 1;
-}
-
-.adventures__card-link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.adventures__card-img {
-  width: 100%;
-  height: auto;
-  border-width: 0 5px;
-  border-radius: 1%;
-}
-
-.adventures__card-title {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  padding-top: 8px;
-}
-
-.adventures__card-description {
-  margin-top: 4px;
-  font-size: 10px;
-  line-height: 14px;
-}
-
 @media screen and (min-width: 744px) {
-  .adventures__container {
+  .main-footer__container {
     padding: 0 40px;
-  }
-
-  .adventures__title {
-    font-size: 26px;
-    line-height: 30px;
-  }
-
-  .adventures__section {
-    padding: 40px 0;
-  }
-
-  .adventures__description {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .adventures__card-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .adventures__card-description {
-    margin-top: 4px;
-    font-size: 14px;
-    line-height: 18px;
   }
 }
 @media screen and (min-width: 1128px) {
-  .adventures__container {
-    margin: 0 auto;
+  .main-footer__container {
     padding: 0 80px;
-    max-width: 1760px;
-  }
-
-  .adventures__title {
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  .adventures__description {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .adventures__card-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .adventures__card-description {
-    margin-top: 4px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-.organize__section {
-  background-color: #fff;
-  color: #222;
-  font-family: "Roboto", sans-serif;
-  padding: 32px 0;
-}
-
-.organize__container {
-  padding: 0 24px;
-  max-width: 1600px;
-}
-
-.organize__title {
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: 700;
-  padding-bottom: 16px;
-}
-
-.organize__cards {
-  display: grid;
-  gap: 0 15px;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 8px 0;
-  overflow: hidden;
-}
-
-.organize__card {
-  grid-column: span 1;
-}
-
-.organize__card-link {
-  text-decoration: none;
-  color: #222;
-}
-
-.organize__card-img {
-  width: 100%;
-  height: auto;
-  border-width: 0 5px;
-  border-radius: 1%;
-}
-
-.organize__card-title {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 500;
-  padding-top: 8px;
-}
-
-@media screen and (min-width: 744px) {
-  .organize__container {
-    padding: 0 40px;
-  }
-
-  .organize__title {
-    font-size: 26px;
-    line-height: 30px;
-  }
-
-  .organize__section {
-    padding: 40px 0;
-  }
-
-  .organize__card-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-}
-@media screen and (min-width: 1128px) {
-  .organize__container {
-    margin: 0 auto;
-    padding: 0 80px;
-    max-width: 1760px;
-  }
-
-  .organize__title {
-    font-size: 32px;
-    line-height: 36px;
-  }
-
-  .organize__card-title {
-    font-size: 18px;
-    line-height: 22px;
-  }
-
-  .organize__card-description {
-    margin-top: 4px;
-    font-size: 14px;
-    line-height: 18px;
   }
 }
 
