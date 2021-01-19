@@ -2,8 +2,8 @@
 @import "../mixins/mixins";
 
 .organize__section {
-  background-color: #fff;
-  color: #222;
+  background-color:$OFFERS-TRAVEL-LINKS-COLOR;
+  color:$CITY-LINKS-COLOR;
   font-family: "Roboto", sans-serif;
   padding: 32px 0;
 }
@@ -33,7 +33,7 @@
 
 .organize__card-link {
   text-decoration: none;
-  color: #222;
+  color:$CITY-LINKS-COLOR;
 }
 
 .organize__card-img {

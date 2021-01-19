@@ -1,8 +1,8 @@
 .footer{
     box-sizing: border-box;
     font-family: Roboto;
-    background-color: $FOOTER_BACKGROUND_COLOR ;
-    border-top: 1px solid $FOOTER_BACKGROUND_BORDER ;
+    background-color: $FOOTER-BACKGROUND-COLOR ;
+    border-top: 1px solid $FOOTER-BACKGROUND-BORDER ;
 }
 .main-footer__container{
     padding-left: 80px;
@@ -15,7 +15,7 @@
     padding-bottom: 48px;
 }
 .footer-card__header{
-    color: $FOOTER_LINKS_COLOR;
+    color: $FOOTER-LINKS-COLOR;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
@@ -25,14 +25,14 @@
 }
 .footer-card_link{
     text-decoration: none;
-    color: $FOOTER_LINKS_COLOR;
+    color: $FOOTER-LINKS-COLOR;
     font-size: 14px;
     line-height: 18px;
 }
 .footer-bottom__contact{
     padding-top: 24px;
     padding-bottom: 24px;
-    border-top: 1px solid $FOOTER_BACKGROUND_BORDER;
+    border-top: 1px solid $FOOTER-BACKGROUND-BORDER;
 }
 .footer-contact__pact{
     display: flex;
@@ -51,7 +51,7 @@
 }
 .footer-pact__catd-item-link{
     text-decoration: none;
-    color: $FOOTER_LINKS_COLOR;
+    color: $FOOTER-LINKS-COLOR;
 }
 .footem-contact__sections{
     display: flex;
@@ -71,7 +71,7 @@
     margin-right: 15px;
 }
 .footer-icon__link{
-    color: $FOOTER_LINKS_COLOR;
+    color: $FOOTER-LINKS-COLOR;
 }
 .footer-social__language-select{
     display: flex;
@@ -88,6 +88,6 @@
     text-decoration: underline;
 }
 .footer a:hover{
-    color: $FOOTER_BACKGROUND_COLOR_HOVER;
+    color: $FOOTER-BACKGROUND-COLOR-HOVER;
     text-decoration: underline;
 }

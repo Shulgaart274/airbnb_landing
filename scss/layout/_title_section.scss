@@ -11,7 +11,7 @@
   height: 100%;
   padding: 0 24px;
   margin: 0 auto;
-  color: $FORM_BACKGROUND_COLOR;
+  color: $FORM-BACKGROUND-COLOR;
   display: flex;
   flex-direction: column;
   align-items: var(--ac-md-align-items, flex-start);
@@ -27,8 +27,8 @@
 }
 .title-section__link {
   width: auto;
-  color: $BTN_TITLE_COLOR;
-  background-color: $BTN_BACKGROUND_COLOR;
+  color: $BTN-TITLE-COLOR;
+  background-color: $BTN-BACKGROUND-COLOR;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -42,7 +42,7 @@
   padding-right: 15px;
 }
 .title-section__link:hover {
-  background-color: $BRN_TITLE_HOVER_COLOR;
+  background-color: $BTN-TITLE-HOVER-COLOR;
 }
 
 

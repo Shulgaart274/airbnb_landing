@@ -196,12 +196,12 @@
     
   
     .adventures__card-title {
-      @include fontLine(18px,22px);
+      @include font-line(18px,22px);
     }
   
     .adventures__card-description {
       margin-top: 4px;
-      @include fontLine(14px,18px);
+      @include font-line(14px,18px);
     }
   }
   
@@ -213,7 +213,7 @@
     }
   
     .adventures__title {
-      @include fontLine(32px,36px);
+      @include font-line(32px,36px);
     }
   
     .adventures__description {
@@ -221,12 +221,12 @@
       font-weight: 500;
     }
     .adventures__card-title {
-      @include fontLine(18px,22px);
+      @include font-line(18px,22px);
     }
   
     .adventures__card-description {
       margin-top: 4px;
-      @include fontLine(14px,18px);
+      @include font-line(14px,18px);
     }
   }
 
@@ -237,7 +237,7 @@
     }
   
     .organize__title {
-      @include fontLine(26px,30px);
+      @include font-line(26px,30px);
     }
   
     .organize__section {
@@ -245,7 +245,7 @@
     }
   
     .organize__card-title {
-      @include fontLine(18px,22px);
+      @include font-line(18px,22px);
     }
   }
   
@@ -257,16 +257,16 @@
     }
   
     .organize__title {
-      @include fontLine(32px,36px);
+      @include font-line(32px,36px);
     }
   
     .organize__card-title {
-      @include fontLine(18px,22px);
+      @include font-line(18px,22px);
     }
   
     .organize__card-description {
       margin-top: 4px;
-      @include fontLine(14px,18px);
+      @include font-line(14px,18px);
     }
   }
   /*FOOTER*/
