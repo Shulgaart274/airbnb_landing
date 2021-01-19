@@ -1,0 +1,92 @@
+@import "../mixins/mixins";
+
+.footer {
+  box-sizing: border-box;
+  font-family: Roboto;
+  background-color: $FOOTER_BACKGROUND_COLOR;
+  border-top: 1px solid $FOOTER_BACKGROUND_BORDER;
+}
+.main-footer__container {
+  @include container-width-sm;
+}
+.footer-container__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.footer-card__header {
+  color: $FOOTER_LINKS_COLOR;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer-card {
+  margin-top: 16px;
+}
+.footer-card_link {
+  text-decoration: none;
+  color: $FOOTER_LINKS_COLOR;
+  font-size: 14px;
+  line-height: 18px;
+}
+.footer-bottom__contact {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid $FOOTER_BACKGROUND_BORDER;
+}
+.footer-contact__pact {
+  display: flex;
+}
+.footer-pact__links_list {
+  display: flex;
+}
+.footer-pact__links-item {
+  margin-left: 15px;
+}
+.footer-pact-list-dot {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+}
+.footer-pact__catd-item-link {
+  text-decoration: none;
+  color: $FOOTER_LINKS_COLOR;
+}
+.footem-contact__sections {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contact__media-links {
+  display: flex;
+}
+.footer-contact_language-cost {
+  display: flex;
+}
+.footer-social_icosns-list {
+  display: flex;
+}
+.footer-social-icon {
+  margin-right: 15px;
+}
+.footer-icon__link {
+  color: $FOOTER_LINKS_COLOR;
+}
+.footer-social__language-select {
+  display: flex;
+}
+.footer-social_cost {
+  margin-right: 35px;
+  margin-left: 20px;
+}
+.footer-language {
+  margin-left: 10px;
+  text-decoration: underline;
+}
+.footer-cost {
+  text-decoration: underline;
+}
+.footer a:hover {
+  color: $FOOTER_BACKGROUND_COLOR_HOVER;
+  text-decoration: underline;
+}

@@ -1,0 +1,81 @@
+.header {
+  background-color: $FORM-BACKGROUND-COLOR;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: $BTN-TITLE-COLOR;
+  font-family: Roboto;
+  z-index: 1;
+}
+.header-nav {
+  height: inherit;
+}
+.header-log__image {
+  color: $BTN-SEARCH-BG-COLOR;
+}
+.header-container {
+  margin: 18px 0;
+  height: inherit;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header-search {
+  color: $FORM-TOP-LINKS-COLOR;
+}
+.header-seacrh__button-image {
+  background-color: $BTN-SEARCH-BG-COLOR;
+}
+
+.header-seacrh__button-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.header-seacrh__button-image svg {
+  color: $FORM-BACKGROUND-COLOR;
+}
+.header-loggin {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-loggin__text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.header-seacrh__button-text {
+  padding: 0 16px;
+}
+.header-seacrh__button-image {
+  padding: 10px;
+  border-radius: 24px;
+  margin: 7px 7px 7px 0;
+}
+.header-loggin_homeCreatorButton {
+  background-color: transparent;
+  border-radius: 24px;
+  padding: 12px;
+  text-align: center;
+}
+.header-loggin_homeCreatorButton a {
+  color: $FORM-TOP-LINKS-COLOR;
+  text-decoration: none;
+}
+.header-loggin_homeCreatorButton:hover,
+.header-loggin__wrorld-container:hover {
+  background-color:$HEADER-BTN-HOVER;
+}
+.header-loggin__wrorld-container {
+  padding: 12px;
+  border-radius: 22px;
+}
