@@ -1,6 +1,6 @@
 @mixin buttons-style {
   display: flex;
-  border: $BTN_BORDER_COLOR 1px solid;
+  border: $BTN-BORDER-COLOR 1px solid;
   background-color: transparent;
   border-radius: 24px;
   align-items: center;

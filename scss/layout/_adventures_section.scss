@@ -2,8 +2,8 @@
 @import "../mixins/mixins";
 
 .adventures__section {
-  background-color: $BACKGROUND_COLOR;
-  color: #fff;
+  background-color: $BACKGROUND-COLOR;
+  color: $OFFERS-TRAVEL-LINKS-COLOR;
   font-family: "Roboto", sans-serif;
   padding: 32px 0;
 }
@@ -41,7 +41,7 @@
 
 .adventures__card-link {
   text-decoration: none;
-  color: #fff;
+  color: $OFFERS-TRAVEL-LINKS-COLOR;
 }
 
 .adventures__card-img {

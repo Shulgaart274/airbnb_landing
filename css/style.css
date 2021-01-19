@@ -850,7 +850,7 @@ textarea {
 
 .adventures__section {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
   padding: 32px 0;
 }
@@ -889,7 +889,7 @@ textarea {
 
 .adventures__card-link {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 .adventures__card-img {
@@ -913,8 +913,8 @@ textarea {
 }
 
 .organize__section {
-  background-color: #fff;
-  color: #222;
+  background-color: #ffffff;
+  color: #222222;
   font-family: "Roboto", sans-serif;
   padding: 32px 0;
 }
@@ -945,7 +945,7 @@ textarea {
 
 .organize__card-link {
   text-decoration: none;
-  color: #222;
+  color: #222222;
 }
 
 .organize__card-img {
