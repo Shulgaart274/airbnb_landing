@@ -644,7 +644,9 @@ textarea {
 
 .palces-wrapper {
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 0 24px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .towns__section {
@@ -695,7 +697,8 @@ textarea {
 }
 
 .places_houses h2 {
-  font-size: 32px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -1038,11 +1041,6 @@ textarea {
 }
 /*PLACES*/
 @media (max-width: 1480px) {
-  .palces-wrapper {
-    margin: 0 auto;
-    padding: 60px 34px;
-  }
-
   .places_house_link {
     font-size: 20px;
   }
@@ -1054,11 +1052,6 @@ textarea {
 @media (max-width: 880px) {
   .town_card img {
     max-width: 44px;
-  }
-
-  .palces-wrapper {
-    margin: 0 auto;
-    padding: 60px 12px;
   }
 
   .places_house_link {
@@ -1081,8 +1074,12 @@ textarea {
   .towns__section {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .places_house__card-btn {
+    top: 47%;
+  }
 }
-@media (max-width: 350px) {
+@media (max-width: 376px) {
   .places_house_link {
     font-size: 10px;
   }
@@ -1099,6 +1096,12 @@ textarea {
     width: 24px;
     height: 24px;
   }
+
+  .places_house__card-btn {
+    top: 52%;
+    width: 24px;
+    height: 24px;
+  }
 }
 @media screen and (max-width: 321px) {
   .places_house__card-btn {
@@ -1110,6 +1113,11 @@ textarea {
     padding: 0 40px;
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .places_houses h2 {
+    font-size: 26px;
+    line-height: 30px;
   }
 
   .places_houses_select {
@@ -1127,6 +1135,11 @@ textarea {
     padding-bottom: 60px;
     margin: 0 auto;
     max-width: 1760px;
+  }
+
+  .places_houses h2 {
+    font-size: 32px;
+    line-height: 36px;
   }
 
   .places_houses_select {

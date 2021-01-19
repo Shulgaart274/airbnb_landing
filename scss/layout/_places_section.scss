@@ -1,10 +1,14 @@
+@import "../mixins/mixins";
+
 .places__section {
   box-sizing: border-box;
   font-family: Roboto;
 }
 .palces-wrapper {
   margin: 0 auto;
-  padding: 60px 24px;
+  @include container-width-sm;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .towns__section {
   display: grid;
@@ -48,7 +52,8 @@
   gap: 15px;
 }
 .places_houses h2 {
-  font-size: 32px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -84,5 +89,3 @@
   width: 32px;
   height: 32px;
 }
-
-

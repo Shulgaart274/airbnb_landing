@@ -79,10 +79,6 @@
 }
 /*PLACES*/
 @media (max-width: 1480px) {
-  .palces-wrapper {
-    margin: 0 auto;
-    padding: 60px 34px;
-  }
   .places_house_link {
     font-size: 20px;
   }
@@ -96,10 +92,6 @@
     max-width: 44px;
   }
 
-  .palces-wrapper {
-    margin: 0 auto;
-    padding: 60px 12px;
-  }
   .places_house_link {
     font-size: 14px;
   }
@@ -118,9 +110,12 @@
   .towns__section {
     grid-template-columns: repeat(2, 1fr);
   }
+  .places_house__card-btn {
+    top: 47%;
+  }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 376px) {
   .places_house_link {
     font-size: 10px;
   }
@@ -131,6 +126,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .places_house__card-btn {
+    width: 24px;
+    height: 24px;
+  }
+  .places_house__card-btn {
+    top: 52%;
     width: 24px;
     height: 24px;
   }
@@ -148,6 +148,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  .places_houses h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
   .places_houses_select {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -162,6 +168,10 @@
     padding-bottom: 60px;
     margin: 0 auto;
     max-width: 1760px;
+  }
+
+  .places_houses h2 {
+    @include font-line(32px, 36px);
   }
   .places_houses_select {
     grid-template-columns: repeat(4, 1fr);
