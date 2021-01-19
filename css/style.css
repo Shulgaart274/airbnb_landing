@@ -457,7 +457,8 @@ textarea {
   height: 48px;
 }
 
-.header-seacrh__button:hover, .header-loggin__auth-button:hover {
+.header-seacrh__button:hover,
+.header-loggin__auth-button:hover {
   transition: 0.5s all;
   box-shadow: 0 2px 2px 0 rgba(112, 110, 110, 0.5);
 }
@@ -853,7 +854,6 @@ textarea {
 
 .adventures__container {
   padding: 0 24px;
-  max-width: 1600px;
 }
 
 .adventures__title-wrap {
@@ -1104,7 +1104,9 @@ textarea {
 }
 @media screen and (min-width: 744px) {
   .palces-wrapper {
-    padding: 60px 40px;
+    padding: 0 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .places_houses_select {
@@ -1117,8 +1119,10 @@ textarea {
 }
 @media screen and (min-width: 1128px) {
   .palces-wrapper {
+    padding: 0 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin: 0 auto;
-    padding: 60px 80px;
     max-width: 1760px;
   }
 
@@ -1167,8 +1171,8 @@ textarea {
 }
 @media screen and (min-width: 1128px) {
   .adventures__container {
-    margin: 0 auto;
     padding: 0 80px;
+    margin: 0 auto;
     max-width: 1760px;
   }
 
@@ -1291,7 +1295,8 @@ textarea {
   }
 }
 @media (max-width: 573px) {
-  .footer-contact-license, .footer-pact__links-item {
+  .footer-contact-license,
+.footer-pact__links-item {
     font-size: 14px;
   }
 

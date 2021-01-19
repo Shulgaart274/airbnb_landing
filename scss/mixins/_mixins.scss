@@ -10,3 +10,15 @@
   font-size: $prop1;
   line-height: $prop2;
 }
+
+@mixin container-width-lg {
+  padding: 0 80px;
+}
+
+@mixin container-width-md {
+  padding: 0 40px;
+}
+
+@mixin container-width-sm {
+  padding: 0 24px;
+}

@@ -2,335 +2,333 @@
 
 /*HEADER*/
 @media (max-width: 880px) {
-    .header-loggin {
-      display: none;
-    }
-    .header-container {
-      justify-content: center;
-    }
-    .header-logo {
-      margin-right: 10px;
-    }
+  .header-loggin {
+    display: none;
   }
-  
-  @media (max-width: 592px) {
-    .header-logo {
-      display: none;
-    }
+  .header-container {
+    justify-content: center;
   }
-  
-  @media (max-width: 400px) {
-    .header-container {
-      padding-left: 44px;
-      padding-right: 44px;
-    }
-    .header-loggin__item {
-      padding: 4px;
-      margin-left: 4px;
-    }
+  .header-logo {
+    margin-right: 10px;
   }
+}
+
+@media (max-width: 592px) {
+  .header-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-container {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+  .header-loggin__item {
+    padding: 4px;
+    margin-left: 4px;
+  }
+}
 /*TITLE*/
 @media (max-width: 532px) {
-    .title-section__header {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
-    //   .title__section {
-    //     max-height: 60vh;
-    //   }
-    .title-section__link {
-      font-size: 10px;
-    }
-  }
-  @media (max-width: 376px) {
-    .title-section__header {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-    .title-section__main-content {
-      padding-right: 22px;
-      padding-left: 22px;
-      bottom: 20px;
-    }
-  }
-  
-  @media screen and (min-width: 744px) {
-    .title__container {
-      padding: 0 40px;
-    }
-    .title__section {
-      height: calc(var(--hc-md-height, 1) / var(--hc-md-width, 1) * 100vw);
-    }
-  }
-  
-  @media screen and (min-width: 950px) {
-    .title__section {
-      height: max(
-        550px,
-        min(85vh, calc(var(--hc-lg-height, 9) / var(--hc-lg-width, 16) * 100vw))
-      );
-    }
-  }
-  
-  @media screen and (min-width: 1128px) {
-    .title__container {
-      margin: 0 auto;
-      padding: 0 80px;
-      max-width: 1760px;
-    }
-  }
-  /*PLACES*/
-  @media (max-width: 1480px) {
-    .palces-wrapper {
-      margin: 0 auto;
-      padding: 60px 34px;
-    }
-    .places_house_link {
-      font-size: 20px;
-    }
-    .town_card__container {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 880px) {
-    .town_card img {
-      max-width: 44px;
-    }
-  
-    .palces-wrapper {
-      margin: 0 auto;
-      padding: 60px 12px;
-    }
-    .places_house_link {
-      font-size: 14px;
-    }
-    .town_card__container {
-      font-size: 14px;
-    }
-    .towns__section {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  @media (max-width: 620px) {
-    .town_card img {
-      max-width: 34px;
-    }
-    .towns__section {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 350px) {
-    .places_house_link {
-      font-size: 10px;
-    }
-    .town_card__container {
-      font-size: 10px;
-    }
-    .towns__section {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .places_house__card-btn {
-      width: 24px;
-      height: 24px;
-    }
-  }
-  
-  @media screen and (max-width: 321px) {
-    .places_house__card-btn {
-      top: 51%;
-    }
-  }
-  
-  @media screen and (min-width: 744px) {
-    .palces-wrapper {
-      padding: 60px 40px;
-    }
-    .places_houses_select {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .places_house__card:last-child {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 1128px) {
-    .palces-wrapper {
-      margin: 0 auto;
-      padding: 60px 80px;
-      max-width: 1760px;
-    }
-    .places_houses_select {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .places_house__card:last-child {
-      display: block;
-    }
-  
-    .places_house__card-btn {
-      display: none;
-    }
-  }
-  /*ADVENTURE*/
-  @media screen and (min-width: 744px) {
-
-    .adventures__container {
-      padding: 0 40px;
-    }
-  
-    .adventures__title {
-      font-size: 26px;
-      line-height: 30px;
-    }
-  
-    .adventures__section {
-      padding: 40px 0;
-    }
-  
-    .adventures__description {
-      font-size: 14px;
-      font-weight: 500;
-    }
-  
-    
-  
-    .adventures__card-title {
-      @include fontLine(18px,22px);
-    }
-  
-    .adventures__card-description {
-      margin-top: 4px;
-      @include fontLine(14px,18px);
-    }
-  }
-  
-  @media screen and (min-width: 1128px) {
-    .adventures__container {
-      margin: 0 auto;
-      padding: 0 80px;
-      max-width: 1760px;
-    }
-  
-    .adventures__title {
-      @include fontLine(32px,36px);
-    }
-  
-    .adventures__description {
-      font-size: 14px;
-      font-weight: 500;
-    }
-    .adventures__card-title {
-      @include fontLine(18px,22px);
-    }
-  
-    .adventures__card-description {
-      margin-top: 4px;
-      @include fontLine(14px,18px);
-    }
+  .title-section__header {
+    font-size: 36px;
+    margin-bottom: 15px;
   }
 
-  /*ORGANIZE*/
-  @media screen and (min-width: 744px) {
-    .organize__container {
-      padding: 0 40px;
-    }
-  
-    .organize__title {
-      @include fontLine(26px,30px);
-    }
-  
-    .organize__section {
-      padding: 40px 0;
-    }
-  
-    .organize__card-title {
-      @include fontLine(18px,22px);
-    }
+  .title-section__link {
+    font-size: 10px;
   }
-  
-  @media screen and (min-width: 1128px) {
-    .organize__container {
-      margin: 0 auto;
-      padding: 0 80px;
-      max-width: 1760px;
-    }
-  
-    .organize__title {
-      @include fontLine(32px,36px);
-    }
-  
-    .organize__card-title {
-      @include fontLine(18px,22px);
-    }
-  
-    .organize__card-description {
-      margin-top: 4px;
-      @include fontLine(14px,18px);
-    }
+}
+@media (max-width: 376px) {
+  .title-section__header {
+    font-size: 30px;
+    margin-bottom: 15px;
   }
-  /*FOOTER*/
-  @media (max-width:1028px){
-    .footer-container__cards{
-        display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows: repeat(4);
-        gap: 20px;
-    }
-    
+  .title-section__main-content {
+    padding-right: 22px;
+    padding-left: 22px;
+    bottom: 20px;
+  }
 }
 
-@media (max-width:1200px){
-    .footem-contact__sections{
-        flex-direction: column-reverse;
-    }
-    .footer-contact__pact{
-        justify-content: center;
-    }
-    .footer-contact__media-links{
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    .footer-contact-license{
-        text-align: center;
-        margin-bottom: 10px; 
-    }
-    .footer-pact__links_list{
-        justify-content: space-between;
-    }
+@media screen and (min-width: 744px) {
+  .title__container {
+    @include container-width-md;
+  }
+  .title__section {
+    height: calc(var(--hc-md-height, 1) / var(--hc-md-width, 1) * 100vw);
+  }
 }
 
-
-@media (max-width:819px){
-    .footer-contact__media-links{
-        justify-content: start;
-    }
-    .footer-contact__pact{
-        flex-direction: column;
-    }
-    .footer-pact__links_list{
-        flex-direction: column;
-    }
-    .footer-contact-license{
-        text-align: start;
-    }
-    .main-footer__container {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-@media (max-width:573px){
-    .footer-contact-license,.footer-pact__links-item{
-        font-size: 14px;
-    }
-    .main-footer__container {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
+@media screen and (min-width: 950px) {
+  .title__section {
+    height: max(
+      550px,
+      min(85vh, calc(var(--hc-lg-height, 9) / var(--hc-lg-width, 16) * 100vw))
+    );
+  }
 }
 
-@media (max-width:389px){
-    .footer-social-media{
-        display: none;
-    }
+@media screen and (min-width: 1128px) {
+  .title__container {
+    margin: 0 auto;
+    @include container-width-lg;
+    max-width: 1760px;
+  }
+}
+/*PLACES*/
+@media (max-width: 1480px) {
+  .palces-wrapper {
+    margin: 0 auto;
+    padding: 60px 34px;
+  }
+  .places_house_link {
+    font-size: 20px;
+  }
+  .town_card__container {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 880px) {
+  .town_card img {
+    max-width: 44px;
+  }
+
+  .palces-wrapper {
+    margin: 0 auto;
+    padding: 60px 12px;
+  }
+  .places_house_link {
+    font-size: 14px;
+  }
+  .town_card__container {
+    font-size: 14px;
+  }
+  .towns__section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .town_card img {
+    max-width: 34px;
+  }
+  .towns__section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 350px) {
+  .places_house_link {
+    font-size: 10px;
+  }
+  .town_card__container {
+    font-size: 10px;
+  }
+  .towns__section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .places_house__card-btn {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .places_house__card-btn {
+    top: 51%;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .palces-wrapper {
+    @include container-width-md;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .places_houses_select {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .places_house__card:last-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 1128px) {
+  .palces-wrapper {
+    @include container-width-lg;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    max-width: 1760px;
+  }
+  .places_houses_select {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .places_house__card:last-child {
+    display: block;
+  }
+
+  .places_house__card-btn {
+    display: none;
+  }
+}
+/*ADVENTURE*/
+@media screen and (min-width: 744px) {
+  .adventures__container {
+    @include container-width-md;
+  }
+
+  .adventures__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .adventures__section {
+    padding: 40px 0;
+  }
+
+  .adventures__description {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .adventures__card-title {
+    @include font-line(18px, 22px);
+  }
+
+  .adventures__card-description {
+    margin-top: 4px;
+    @include font-line(14px, 18px);
+  }
+}
+
+@media screen and (min-width: 1128px) {
+  .adventures__container {
+    @include container-width-lg;
+    margin: 0 auto;
+    max-width: 1760px;
+  }
+
+  .adventures__title {
+    @include font-line(32px, 36px);
+  }
+
+  .adventures__description {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .adventures__card-title {
+    @include font-line(18px, 22px);
+  }
+
+  .adventures__card-description {
+    margin-top: 4px;
+    @include font-line(14px, 18px);
+  }
+}
+
+/*ORGANIZE*/
+@media screen and (min-width: 744px) {
+  .organize__container {
+    padding: 0 40px;
+  }
+
+  .organize__title {
+    @include font-line(26px, 30px);
+  }
+
+  .organize__section {
+    padding: 40px 0;
+  }
+
+  .organize__card-title {
+    @include font-line(18px, 22px);
+  }
+}
+
+@media screen and (min-width: 1128px) {
+  .organize__container {
+    margin: 0 auto;
+    @include container-width-lg;
+    max-width: 1760px;
+  }
+
+  .organize__title {
+    @include font-line(32px, 36px);
+  }
+
+  .organize__card-title {
+    @include font-line(18px, 22px);
+  }
+
+  .organize__card-description {
+    margin-top: 4px;
+    @include font-line(14px, 18px);
+  }
+}
+/*FOOTER*/
+@media (max-width: 1028px) {
+  .footer-container__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footem-contact__sections {
+    flex-direction: column-reverse;
+  }
+  .footer-contact__pact {
+    justify-content: center;
+  }
+  .footer-contact__media-links {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .footer-contact-license {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .footer-pact__links_list {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 819px) {
+  .footer-contact__media-links {
+    justify-content: start;
+  }
+  .footer-contact__pact {
+    flex-direction: column;
+  }
+  .footer-pact__links_list {
+    flex-direction: column;
+  }
+  .footer-contact-license {
+    text-align: start;
+  }
+  .main-footer__container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 573px) {
+  .footer-contact-license,
+  .footer-pact__links-item {
+    font-size: 14px;
+  }
+  .main-footer__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 389px) {
+  .footer-social-media {
+    display: none;
+  }
 }

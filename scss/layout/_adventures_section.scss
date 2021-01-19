@@ -9,8 +9,7 @@
 }
 
 .adventures__container {
-  padding: 0 24px;
-  max-width: 1600px;
+  @include container-width-sm;
 }
 
 .adventures__title-wrap {
