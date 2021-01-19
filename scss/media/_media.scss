@@ -151,11 +151,12 @@
     line-height: 30px;
   }
 
-  .places_houses_select {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .places_house__card:last-child {
+  .places_house__card-btn {
     display: none;
+  }
+
+  .places_houses_select {
+    grid-template-columns: repeat(4, calc(45% - 20px * 2));
   }
 }
 @media screen and (min-width: 1128px) {
@@ -170,15 +171,10 @@
   .places_houses h2 {
     @include font-line(32px, 36px);
   }
+
   .places_houses_select {
     grid-template-columns: repeat(4, 1fr);
-  }
-  .places_house__card:last-child {
-    display: block;
-  }
-
-  .places_house__card-btn {
-    display: none;
+    overflow-x: hidden;
   }
 }
 /*ADVENTURE*/
@@ -201,6 +197,12 @@
     font-weight: 500;
   }
 
+  .adventures__cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    overflow: hidden;
+  }
+
   .adventures__card-title {
     @include font-line(18px, 22px);
   }
@@ -226,6 +228,7 @@
     font-size: 14px;
     font-weight: 500;
   }
+
   .adventures__card-title {
     @include font-line(18px, 22px);
   }
@@ -244,6 +247,12 @@
 
   .organize__title {
     @include font-line(26px, 30px);
+  }
+
+  .organize__cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    overflow: hidden;
   }
 
   .organize__section {
