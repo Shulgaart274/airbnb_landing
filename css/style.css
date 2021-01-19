@@ -529,9 +529,22 @@ textarea {
 }
 
 .header-seacrh__button-text {
+  margin: 7px 0;
+  width: 100%;
+  border: 0;
+}
+
+.header-seacrh__button-text::placeholder {
+  font-family: Roboto;
+  color: #222222;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
+}
+
+.header-search-label {
+  width: 100%;
+  display: flex;
 }
 
 .header-seacrh__button-image svg {
